@@ -19,7 +19,8 @@ function validarDatosIngreso(){
 
 function consultarUsuario(email, clave){
     $.ajax({
-        url: "http://localhost:8080/api/user/" + email + "/" + clave,
+        //url: "http://localhost:8080/api/user/" + email + "/" + clave,
+        url: "http://129.151.122.81:8080/api/user/" + email + "/" + clave,
         type: "GET",
         datatype: "JSON",
         success: function (respuestalogin) {

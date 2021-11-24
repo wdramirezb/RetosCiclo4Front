@@ -44,7 +44,8 @@ function validarDatosRegistro(){
 function consultarExistenciaUsuario(email, usuario, clave){
     //console.log(email);
     $.ajax({
-        url: "http://localhost:8080/api/user/" + email,
+        //url: "http://localhost:8080/api/user/" + email,
+        url: "http://129.151.122.81:8080/api/user/" + email,
         type: "GET",
         data: email,
         datatype: "JSON",
@@ -70,7 +71,8 @@ function crearUsuario(email, usuario, clave){
         password: $("#clave1").val()};
     //console.log(nuevoUsuario);
     $.ajax({
-        url: "http://localhost:8080/api/user/new",
+        //url: "http://localhost:8080/api/user/new",
+        url: "http://129.151.122.81:8080/api/user/new",
         type: "POST",
         contentType: "application/json; charset=utf-8",
         dataType: "JSON",
