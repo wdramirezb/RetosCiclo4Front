@@ -79,7 +79,7 @@ function crearUsuario(email, usuario, clave){
         data: JSON.stringify(nuevoUsuario),
         success: function (respuesta) {
             alert("Cuenta creada de forma correcta. Ahora ingrese con su correo y contraseña.");
-            window.location.href = "/index.html";
+            window.location.href = "index.html";
         },
         error: function (jqXHR, textStatus, errorThrown) {
             alert("No fue posible crear la cuenta. Por favor intente de nuevo");

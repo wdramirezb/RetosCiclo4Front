@@ -29,7 +29,7 @@ function consultarUsuario(email, clave){
                 alert("El correo o contraseña es incorrecto.  Intente de nuevo.");
             }else{
                 localStorage.setItem("usuario", respuestalogin.name);
-                window.location.href = "/catalogo.html";
+                window.location.href = "catalogo.html";
             }
         },
         error: function (jqXHR, textStatus, errorThrown) {
