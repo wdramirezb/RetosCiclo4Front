@@ -1,8 +1,8 @@
 function validarDatosRegistro(){
-    const usuario=document.getElementById('usuario');
-    const email=document.getElementById('email');    
-    const clave1=document.getElementById('clave1');
-    const clave2=document.getElementById('clave2');
+    const usuario=document.getElementById.trim('usuario');
+    const email=document.getElementById('email').trim;    
+    const clave1=document.getElementById.trim('clave1');
+    const clave2=document.getElementById('clave2').trim;
     const expReg=/^([\da-z_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
 
     //console.log(usuario.value);
